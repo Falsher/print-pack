@@ -1,0 +1,231 @@
+.header {
+    /*background: #ffee00;
+    background: url(../../img/fonB.jpg);*/
+    padding: 0 0px;
+}
+
+.header_wrap {
+    padding-bottom: 65px;
+}
+
+.header_top {
+    display: grid;
+    grid-template-columns: 224px 1fr;
+    grid-column-gap: 20px;
+    padding-top: 40px;
+    align-items: center;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+
+/*
+.logo_header {
+    width: 300px;
+}*/
+
+.logo_header:hover {
+    animation: titleimg 1.5s;
+}
+
+@keyframes titleimg {
+    70% {
+        transform: rotate(380deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.header_info {
+    padding-top: 12%;
+    padding-bottom: 2%;
+}
+
+.header_title_one {
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: 10px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.header_title_info {
+    font-size: 30px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.header_title_two {
+    color: rgb(1, 139, 54);
+    font-size: 70px;
+    line-height: 70px;
+    letter-spacing: 36px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.header_title_three {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+
+.header_button {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button_header {
+    border-radius: 10px;
+    border-color: #00000000;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    background: rgb(1, 139, 54);
+    background-size: 200% auto;
+    padding: 20px 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transition: .5s;
+}
+
+.header_title {
+    font-size: 45px;
+    letter-spacing: 15px;
+    line-height: 45px;
+}
+
+.header_link {
+    font-size: 25px;
+    line-height: 45px;
+    color: #000000;
+    font-weight: 800;
+    text-decoration: none;
+    display: inline-block;
+    letter-spacing: 10px;
+    transition-duration: 500ms;
+    transition-property: letter-spacing;
+    margin-top: 30px;
+}
+
+.header_link:hover {
+    letter-spacing: 15px;
+}
+
+.header_btn {
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    width: 84px;
+    height: 42px;
+    cursor: pointer;
+    animation-name: animateArrow;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    padding-top: 50px;
+}
+
+@media (max-width: 1280px) {
+    .header_top {
+        margin-left: 50px;
+        margin-right: 50px;
+        font-size: 15px;
+    }
+    .header_title {
+        font-size: 50px;
+        line-height: 60px;
+        letter-spacing: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .img_big {
+        display: none;
+    }
+    .header_top {
+        display: none;
+    }
+    .header_title_one {
+        font-size: 25px;
+    }
+    .header_title_info {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 580px) {
+    .header_title {
+        font-size: 40px;
+        line-height: 30px;
+        letter-spacing: 9px;
+        font-weight: 700;
+        margin-bottom: 35px;
+    }
+    .header_title_two {
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 9px;
+        font-weight: 700;
+    }
+    .header_title_one {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 700;
+        letter-spacing: px;
+    }
+    .header_title_info {
+        display: none;
+    }
+    .header_link {
+        font-size: 20px;
+        line-height: 45px;
+        letter-spacing: 6px;
+    }
+    .header_link:hover {
+        letter-spacing: 9px;
+    }
+    .header_info {
+        padding-top: 35%;
+        padding-bottom: 16.6%;
+    }
+    .header_btn {
+        display: none;
+    }
+}
+
+@media(max-width:580px) {
+    .header_title_one {
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 350px) {
+    .header_btn {
+        display: none;
+    }
+    .header_title_one {
+        font-size: 10px;
+    }
+}
+
+@keyframes animateArrow {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(25px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
