@@ -1,0 +1,21 @@
+.logo_header {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
+.img_logo_header {
+    width: 200px;
+}
+
+@media (max-width: 750px) {
+    .logo_header {
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .img_logo_header {
+        width: 200px;
+    }
+}
